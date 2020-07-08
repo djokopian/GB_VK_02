@@ -68,13 +68,37 @@ class ViewController: UIViewController {
         guard let lgn = login.text else { return }
         guard let psw = password.text else { return }
            
-        if lgn == "123", psw == "123" {
+        if lgn == "admin", psw == "12345" {
             print("Логин/пароль верен")
         }
         else {
             print("Неверные логин/пароль")
         }
     }
+    
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        let lgn = login.text!
+        let psw = password.text!
+        
+        if lgn == "admin" && psw == "12345" {
+            return true
+        } else {
+                        // Создаем контроллер
+            let alert = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+            // Создаем кнопку для UIAlertController
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            // Добавляем кнопку на UIAlertController
+            alert.addAction(action)
+            // Показываем UIAlertController
+            present(alert, animated: true, completion: nil)
+            
+            return false
+        }
+    }
+
+    
 }
     
     
