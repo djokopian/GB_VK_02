@@ -13,6 +13,13 @@
 		09C4C35E24AF6E9A008FB921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C4C35C24AF6E9A008FB921 /* Main.storyboard */; };
 		09C4C36024AF6EA8008FB921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4C35F24AF6EA8008FB921 /* Assets.xcassets */; };
 		09C4C36324AF6EA8008FB921 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C4C36124AF6EA8008FB921 /* LaunchScreen.storyboard */; };
+		09E4086A24B73BC2008048D1 /* UserGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4086924B73BC2008048D1 /* UserGroupController.swift */; };
+		09E4086C24B73BDF008048D1 /* UserGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4086B24B73BDF008048D1 /* UserGroupCell.swift */; };
+		09E4086E24B74B8B008048D1 /* AllGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4086D24B74B8B008048D1 /* AllGroupController.swift */; };
+		09E4087024B75B5A008048D1 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4086F24B75B5A008048D1 /* FriendsCell.swift */; };
+		09E4087224B75BA8008048D1 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4087124B75BA8008048D1 /* FriendsController.swift */; };
+		09E4087424B76CEE008048D1 /* FriendsCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4087324B76CEE008048D1 /* FriendsCollectionController.swift */; };
+		09E4087624B76D34008048D1 /* FriendsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E4087524B76D34008048D1 /* FriendsCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		09C4C35F24AF6EA8008FB921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C4C36224AF6EA8008FB921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C4C36424AF6EA8008FB921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E4086924B73BC2008048D1 /* UserGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupController.swift; sourceTree = "<group>"; };
+		09E4086B24B73BDF008048D1 /* UserGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupCell.swift; sourceTree = "<group>"; };
+		09E4086D24B74B8B008048D1 /* AllGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupController.swift; sourceTree = "<group>"; };
+		09E4086F24B75B5A008048D1 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		09E4087124B75BA8008048D1 /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
+		09E4087324B76CEE008048D1 /* FriendsCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionController.swift; sourceTree = "<group>"; };
+		09E4087524B76D34008048D1 /* FriendsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		09C4C35524AF6E9A008FB921 /* Client_VK_KvashninAK */ = {
 			isa = PBXGroup;
 			children = (
+				09E4086824B73B39008048D1 /* Model */,
 				09C4C35624AF6E9A008FB921 /* AppDelegate.swift */,
 				09C4C35824AF6E9A008FB921 /* SceneDelegate.swift */,
 				09C4C35A24AF6E9A008FB921 /* ViewController.swift */,
@@ -65,6 +80,20 @@
 				09C4C36424AF6EA8008FB921 /* Info.plist */,
 			);
 			path = Client_VK_KvashninAK;
+			sourceTree = "<group>";
+		};
+		09E4086824B73B39008048D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09E4086924B73BC2008048D1 /* UserGroupController.swift */,
+				09E4086B24B73BDF008048D1 /* UserGroupCell.swift */,
+				09E4086D24B74B8B008048D1 /* AllGroupController.swift */,
+				09E4086F24B75B5A008048D1 /* FriendsCell.swift */,
+				09E4087124B75BA8008048D1 /* FriendsController.swift */,
+				09E4087324B76CEE008048D1 /* FriendsCollectionController.swift */,
+				09E4087524B76D34008048D1 /* FriendsCollectionCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +168,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C4C35B24AF6E9A008FB921 /* ViewController.swift in Sources */,
+				09E4087224B75BA8008048D1 /* FriendsController.swift in Sources */,
+				09E4086A24B73BC2008048D1 /* UserGroupController.swift in Sources */,
+				09E4087424B76CEE008048D1 /* FriendsCollectionController.swift in Sources */,
+				09E4086C24B73BDF008048D1 /* UserGroupCell.swift in Sources */,
 				09C4C35724AF6E9A008FB921 /* AppDelegate.swift in Sources */,
 				09C4C35924AF6E9A008FB921 /* SceneDelegate.swift in Sources */,
+				09E4087624B76D34008048D1 /* FriendsCollectionCell.swift in Sources */,
+				09E4086E24B74B8B008048D1 /* AllGroupController.swift in Sources */,
+				09E4087024B75B5A008048D1 /* FriendsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
