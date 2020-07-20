@@ -13,14 +13,15 @@ class FriendsCollectionController: UIViewController {
     @IBOutlet weak var collecionView: UICollectionView!
     
     var friendImage = [
-        ".person",
-        ".person.fill",
+        "person",
+        "person.fill",
         "person.circle",
         "person.circle.fill",
         "person.icloud",
-        "person.2.fill",
-        "Stone"
+        "person.2.fill"
     ]
+    
+    
     
     
     override func viewDidLoad() {
@@ -28,7 +29,10 @@ class FriendsCollectionController: UIViewController {
         
         collecionView.dataSource = self
         
+        
     }
+    
+    
 }
 
 
@@ -41,7 +45,12 @@ extension FriendsCollectionController: UICollectionViewDataSource {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsCollectionCell", for: indexPath) as? FriendsCollectionCell else { fatalError() }
         
-        //cell.image.image = UIImage(named: friendImage[indexPath.row])
+        cell.image.image = UIImage(systemName: friendImage[indexPath.row])
+            //UIImage(named: friendImage[indexPath.row])
+        
+        cell.configure()
+        
+        cell.likeCount.text = String(cell.likeCountInt)
         
         return cell
     }
