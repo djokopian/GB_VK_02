@@ -46,7 +46,7 @@ extension FriendsCollectionController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsCollectionCell", for: indexPath) as? FriendsCollectionCell else { fatalError() }
         
         cell.image.image = UIImage(systemName: friendImage[indexPath.row])
-            //UIImage(named: friendImage[indexPath.row])
+           
         
         cell.configure()
         

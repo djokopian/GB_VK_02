@@ -30,6 +30,7 @@ class GroupViewController: UIViewController {
         
         tableView.dataSource = self
         
+        
     }
     
     @IBAction func addCity(segue: UIStoryboardSegue) {
