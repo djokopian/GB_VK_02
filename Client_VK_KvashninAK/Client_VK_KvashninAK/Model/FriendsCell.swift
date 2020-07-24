@@ -37,6 +37,6 @@ class FriendsCell: UITableViewCell {
         
     }
     
+    
+    
 }
-
-

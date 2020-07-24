@@ -100,6 +100,7 @@ extension FriendsController: UITableViewDataSource {
         
         cell.titleLabel.text = user
         
+        //cell.avatarContanerView.configure()
         
         return cell
     }

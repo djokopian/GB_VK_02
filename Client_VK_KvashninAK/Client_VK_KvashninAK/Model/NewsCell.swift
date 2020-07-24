@@ -25,10 +25,47 @@ class NewsCell: UITableViewCell {
     @IBOutlet weak var newsText: UILabel!
     @IBOutlet weak var likeCount: UILabel!
     
+    var likeOn: Bool! //= false
+    var likeCountInt: Int! //= 1 + Int.random(in: 0...100)
+    
     override class var layerClass: AnyClass {
         return CAShapeLayer.self
     }
 
+    func likeAnimate() {
+        
+        UIView.transition(with: likeCount,
+                          duration: 0.5,
+                          options: .transitionFlipFromBottom,
+                          animations: {
+                               if self.likeOn {
+                                self.likeOn = false
+                                self.likeCountInt -= 1
+                                self.likeCount.text = String(self.likeCountInt)
+                                self.likeCount.textColor = UIColor.black
+                            }
+                               else {
+                                self.likeOn = true
+                                self.likeCountInt += 1
+                                self.likeCount.text = String(self.likeCountInt)
+                                self.likeCount.textColor = UIColor.red
+                            }
+        }, completion: { _ in
+            
+            UIView.animate(withDuration: 0.25,
+                           animations: {
+                            if self.likeOn {
+                                self.likeHeart.tintColor = UIColor.red
+                            }
+                            else {
+                                self.likeHeart.tintColor = UIColor.black
+                            }
+            },
+                           completion: nil)
+        })
+        
+    }
+    
     override func draw(_ rect: CGRect) {
 
         avatarView.layer.cornerRadius = avatarView.bounds.width / 2
@@ -42,4 +79,24 @@ class NewsCell: UITableViewCell {
         
     }
 
+    func configure() {
+     
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(onTap(_:)))
+        
+        addGestureRecognizer(recognizer)
+        
+        if likeOn {
+            likeCount.textColor = UIColor.red
+            self.likeHeart.tintColor = UIColor.red
+        }
+           else {
+            likeCount.textColor = UIColor.black
+            self.likeHeart.tintColor = UIColor.black
+        }
+    }
+    
+    @objc func onTap(_ sender: Any?) {
+        likeAnimate()
+    }
+    
 }
