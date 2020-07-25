@@ -48,7 +48,7 @@ extension FriendsCollectionController: UICollectionViewDataSource {
         
         cell.image.image = UIImage(systemName: friendImage[indexPath.row])
            
-        cell.configure()
+        //cell.configure()
         
         cell.likeCount.text = String(cell.likeCountInt)
         
