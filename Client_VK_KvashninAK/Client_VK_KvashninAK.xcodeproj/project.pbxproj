@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090501F524D42BA900E36E70 /* animationNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090501F424D42BA900E36E70 /* animationNavController.swift */; };
+		090501F724D42CB400E36E70 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090501F624D42CB400E36E70 /* NavigationController.swift */; };
 		093DFBCF24C62EFB0025C05B /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DFBCE24C62EFB0025C05B /* SectionFooter.swift */; };
 		093DFBD124C62F3A0025C05B /* SectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093DFBD024C62F3A0025C05B /* SectionFooter.xib */; };
 		096E065824C87D5D00892A29 /* SearchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E065724C87D5D00892A29 /* SearchHeader.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090501F424D42BA900E36E70 /* animationNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationNavController.swift; sourceTree = "<group>"; };
+		090501F624D42CB400E36E70 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		093DFBCE24C62EFB0025C05B /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
 		093DFBD024C62F3A0025C05B /* SectionFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionFooter.xib; sourceTree = "<group>"; };
 		096E065724C87D5D00892A29 /* SearchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeader.swift; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090501F324D42B7D00E36E70 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				090501F424D42BA900E36E70 /* animationNavController.swift */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
 		09C4C34A24AF6E99008FB921 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		09E4086824B73B39008048D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				090501F324D42B7D00E36E70 /* animation */,
 				09E4086924B73BC2008048D1 /* UserGroupController.swift */,
 				09E4086B24B73BDF008048D1 /* UserGroupCell.swift */,
 				09E4086D24B74B8B008048D1 /* AllGroupController.swift */,
@@ -116,6 +129,7 @@
 				096EE11224C9B2E40095EF18 /* NewsController.swift */,
 				0978821724CC3DB200C0B1E4 /* FotoController.swift */,
 				0978821924CC504A00C0B1E4 /* FotoControllerCell.swift */,
+				090501F624D42CB400E36E70 /* NavigationController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,10 +215,12 @@
 				09E4087424B76CEE008048D1 /* FriendsCollectionController.swift in Sources */,
 				09E4086C24B73BDF008048D1 /* UserGroupCell.swift in Sources */,
 				09C4C35724AF6E9A008FB921 /* AppDelegate.swift in Sources */,
+				090501F524D42BA900E36E70 /* animationNavController.swift in Sources */,
 				09C4C35924AF6E9A008FB921 /* SceneDelegate.swift in Sources */,
 				096E065824C87D5D00892A29 /* SearchHeader.swift in Sources */,
 				09E4087624B76D34008048D1 /* FriendsCollectionCell.swift in Sources */,
 				096EE11324C9B2E40095EF18 /* NewsController.swift in Sources */,
+				090501F724D42CB400E36E70 /* NavigationController.swift in Sources */,
 				09E4086E24B74B8B008048D1 /* AllGroupController.swift in Sources */,
 				096EE11124C9B2CE0095EF18 /* NewsCell.swift in Sources */,
 				09E4087024B75B5A008048D1 /* FriendsCell.swift in Sources */,

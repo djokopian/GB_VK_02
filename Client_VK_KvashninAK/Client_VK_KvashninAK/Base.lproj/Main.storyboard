@@ -121,7 +121,7 @@
         <!--Way 01-->
         <scene sceneID="9Iu-Y2-zke">
             <objects>
-                <navigationController id="28H-SO-mSO" sceneMemberID="viewController">
+                <navigationController id="28H-SO-mSO" customClass="CustomNavigationController" customModule="Client_VK_KvashninAK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="person.fill" catalog="system" id="3go-4w-zTE"/>
                     <navigationItem key="navigationItem" title="Way 01" id="vKz-1F-kCq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hW7-rv-vdP">
