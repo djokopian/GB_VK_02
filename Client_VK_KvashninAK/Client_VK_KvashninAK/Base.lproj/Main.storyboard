@@ -340,6 +340,7 @@
                                             <outlet property="loadingImage2" destination="a17-R4-04N" id="5lA-mh-qAV"/>
                                             <outlet property="loadingImage3" destination="U4S-Yp-Izv" id="RiQ-6f-Hfr"/>
                                             <outlet property="loadingVIew" destination="uT4-8J-Li3" id="PkS-s9-RQZ"/>
+                                            <segue destination="2Bx-Dj-Zn1" kind="show" id="Mzz-Hj-tKG"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -362,6 +363,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLN-zZ-VFz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3609.375" y="-208.09859154929578"/>
+        </scene>
+        <!--Foto Controller-->
+        <scene sceneID="boM-AD-pkR">
+            <objects>
+                <viewController id="2Bx-Dj-Zn1" customClass="FotoController" customModule="Client_VK_KvashninAK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SrI-bh-W7N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FME-nP-fj2">
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FME-nP-fj2" firstAttribute="leading" secondItem="UBB-Tc-fch" secondAttribute="leading" id="1cV-0S-mP9"/>
+                            <constraint firstItem="UBB-Tc-fch" firstAttribute="bottom" secondItem="FME-nP-fj2" secondAttribute="bottom" id="UnM-0V-1dK"/>
+                            <constraint firstItem="FME-nP-fj2" firstAttribute="trailing" secondItem="UBB-Tc-fch" secondAttribute="trailing" id="h5D-HU-QhQ"/>
+                            <constraint firstItem="FME-nP-fj2" firstAttribute="top" secondItem="UBB-Tc-fch" secondAttribute="top" id="hgh-nz-T2V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UBB-Tc-fch"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Yo-c1-Iq3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQp-dU-aOJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4447.5" y="-208.09859154929578"/>
         </scene>
         <!--Way 02-->
         <scene sceneID="u8M-DZ-vMb">
