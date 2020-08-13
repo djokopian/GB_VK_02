@@ -30,6 +30,7 @@ class AllGroupViewController: UIViewController {
         
         tableView.dataSource = self
         
+
     }
 }
 
