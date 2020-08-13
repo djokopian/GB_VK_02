@@ -17,6 +17,7 @@
 		096EE11324C9B2E40095EF18 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EE11224C9B2E40095EF18 /* NewsController.swift */; };
 		0978821824CC3DB200C0B1E4 /* FotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978821724CC3DB200C0B1E4 /* FotoController.swift */; };
 		0978821A24CC504A00C0B1E4 /* FotoControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978821924CC504A00C0B1E4 /* FotoControllerCell.swift */; };
+		097EB54424E58AB300E0238D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EB54324E58AB300E0238D /* Session.swift */; };
 		09C4C35724AF6E9A008FB921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C35624AF6E9A008FB921 /* AppDelegate.swift */; };
 		09C4C35924AF6E9A008FB921 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C35824AF6E9A008FB921 /* SceneDelegate.swift */; };
 		09C4C35B24AF6E9A008FB921 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C35A24AF6E9A008FB921 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		096EE11224C9B2E40095EF18 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		0978821724CC3DB200C0B1E4 /* FotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoController.swift; sourceTree = "<group>"; };
 		0978821924CC504A00C0B1E4 /* FotoControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoControllerCell.swift; sourceTree = "<group>"; };
+		097EB54324E58AB300E0238D /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		09C4C35324AF6E9A008FB921 /* Client_VK_KvashninAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client_VK_KvashninAK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4C35624AF6E9A008FB921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4C35824AF6E9A008FB921 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			path = animation;
 			sourceTree = "<group>";
 		};
+		097EB54224E58A8600E0238D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				097EB54324E58AB300E0238D /* Session.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		09C4C34A24AF6E99008FB921 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,8 @@
 		09C4C35524AF6E9A008FB921 /* Client_VK_KvashninAK */ = {
 			isa = PBXGroup;
 			children = (
+				097EB54224E58A8600E0238D /* Utils */,
+				090501F324D42B7D00E36E70 /* animation */,
 				09E4086824B73B39008048D1 /* Model */,
 				09C4C35624AF6E9A008FB921 /* AppDelegate.swift */,
 				09C4C35824AF6E9A008FB921 /* SceneDelegate.swift */,
@@ -113,7 +125,6 @@
 		09E4086824B73B39008048D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				090501F324D42B7D00E36E70 /* animation */,
 				09E4086924B73BC2008048D1 /* UserGroupController.swift */,
 				09E4086B24B73BDF008048D1 /* UserGroupCell.swift */,
 				09E4086D24B74B8B008048D1 /* AllGroupController.swift */,
@@ -218,6 +229,7 @@
 				090501F524D42BA900E36E70 /* animationNavController.swift in Sources */,
 				09C4C35924AF6E9A008FB921 /* SceneDelegate.swift in Sources */,
 				096E065824C87D5D00892A29 /* SearchHeader.swift in Sources */,
+				097EB54424E58AB300E0238D /* Session.swift in Sources */,
 				09E4087624B76D34008048D1 /* FriendsCollectionCell.swift in Sources */,
 				096EE11324C9B2E40095EF18 /* NewsController.swift in Sources */,
 				090501F724D42CB400E36E70 /* NavigationController.swift in Sources */,
