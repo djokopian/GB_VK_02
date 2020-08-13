@@ -72,6 +72,8 @@ extension GroupViewController: UITableViewDataSource {
         
         cell.titleLabel.text = userGroup[indexPath.row]
         
+        cell.configure()
+        
         return cell
     }
     

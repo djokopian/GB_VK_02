@@ -12,6 +12,7 @@ class FriendsCollectionController: UIViewController {
     
     @IBOutlet weak var collecionView: UICollectionView!
     
+    
     var friendImage = [
         "person",
         "person.fill",
@@ -47,10 +48,15 @@ extension FriendsCollectionController: UICollectionViewDataSource {
         
         cell.image.image = UIImage(systemName: friendImage[indexPath.row])
            
-        
         cell.configure()
         
         cell.likeCount.text = String(cell.likeCountInt)
+        
+        cell.image.alpha = 0.0
+        cell.likeCount.alpha = 0.0
+        cell.like.alpha = 0.0
+        
+        cell.lodingAnimate()
         
         return cell
     }
